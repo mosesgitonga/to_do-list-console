@@ -19,3 +19,10 @@ def display_tasks():
     for index, task in enumerate(tasks):
         status = "completed" if task['complete'] else "Not Completed"
         print(f"{index + 1}. {task['title'] - status}")
+
+select = int(input("Select:\n1 to add task\n2 to display tasks"))
+
+if select == 1:
+    add_tasks()
+elif select == 2:
+    display_tasks()
